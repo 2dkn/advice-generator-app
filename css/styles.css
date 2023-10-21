@@ -2,4 +2,64 @@ html {
   background-color: hsl(218, 23%, 16%);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: relative;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  background-color: hsl(217, 19%, 24%);
+  width: 29rem;
+  min-height: 18rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.advice__header {
+  font-weight: 800;
+  color: hsl(150, 100%, 66%);
+  font-family: "Manrope", san-serif;
+}
+
+.advice__text {
+  font-family: "Manrope", san-serif;
+  color: lightcyan;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.btn__image {
+  background-color: hsl(150, 100%, 66%);
+}
+
+.next-btn {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  border: 1rem none hsl(150, 100%, 66%);
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+}
+
+.attribution {
+  padding-top: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

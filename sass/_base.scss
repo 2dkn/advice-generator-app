@@ -3,3 +3,64 @@
 html {
   background-color: $darkblue;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: relative;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  background-color: $darkgrayblue;
+  width: 29rem;
+  min-height: 18rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.advice__header {
+  font-weight: 800;
+  color: $neongreen;
+  font-family: $manrope;
+}
+
+.advice__text {
+  font-family: $manrope;
+  color: lightcyan;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.btn {
+  position: absolute;
+  // place-content: center;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.btn__image {
+  background-color: $neongreen;
+}
+
+.next-btn {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  border: 1rem none $neongreen;
+  border-radius: 50%;
+  background-color: $neongreen;
+}
+
+.attribution {
+  padding-top: 2rem;
+}
