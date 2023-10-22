@@ -13,36 +13,46 @@ body {
 }
 
 .container {
-  display: relative;
-  flex-direction: column;
+  position: relative;
   text-align: center;
   align-content: center;
   background-color: hsl(217, 19%, 24%);
-  width: 29rem;
-  min-height: 18rem;
+  width: 28rem;
+  min-height: 12rem;
   border-radius: 1rem;
   padding: 2rem;
-  overflow: hidden;
+  z-index: 1;
 }
 
 .advice__header {
-  font-weight: 800;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 5px;
   color: hsl(150, 100%, 66%);
   font-family: "Manrope", san-serif;
+  margin-bottom: 0;
 }
 
 .advice__text {
+  display: flex;
   font-family: "Manrope", san-serif;
   color: lightcyan;
   font-size: 1.75rem;
   font-weight: 800;
 }
 
+.img__divider {
+  margin-bottom: 2rem;
+}
+
 .btn {
   position: absolute;
+  place-content: center;
   left: 50%;
-  bottom: 0;
+  bottom: -2rem;
+  z-index: 2;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 .btn__image {
@@ -58,8 +68,20 @@ body {
   background-color: hsl(150, 100%, 66%);
 }
 
-.attribution {
-  padding-top: 2rem;
+.footer {
+  color: rgb(221, 215, 215);
+  font-size: 0.9rem;
+  font-family: "Manrope", san-serif;
+  padding-top: 4rem;
+}
+
+.footer a {
+  color: hsl(150, 100%, 66%);
+}
+
+.footer a:hover {
+  cursor: pointer;
+  color: hsl(150, 51%, 44%);
 }
 
 /*# sourceMappingURL=styles.css.map */
