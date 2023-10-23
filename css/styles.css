@@ -39,6 +39,7 @@ body {
   color: lightcyan;
   font-size: 1.75rem;
   font-weight: 800;
+  justify-content: center;
 }
 
 .img__divider {
