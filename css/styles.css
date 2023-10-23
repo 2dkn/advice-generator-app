@@ -22,8 +22,18 @@ body {
   border-radius: 1rem;
   padding: 2rem;
   z-index: 1;
+  box-shadow: 15px 10px 25px rgba(24, 23, 23, 0.171);
 }
 
+@media screen and (max-width: 34.375em) {
+  .container {
+    position: relative;
+    width: 20rem;
+    min-height: 20rem;
+    text-align: center;
+    align-content: center;
+  }
+}
 .advice__header {
   font-weight: bold;
   font-size: 1rem;
@@ -39,30 +49,29 @@ body {
 
 @keyframes slideAndCenter {
   0% {
-    transform: translateX(-25%); /* Start from the left (fully hidden) */
+    transform: translateX(-25%);
   }
   50% {
-    transform: translateX(25%); /* Move to the center */
+    transform: translateX(25%);
   }
   100% {
-    transform: translateX(0%); /* Return to the left (fully hidden) */
+    transform: translateX(0%);
   }
 }
 .advice__text {
-  animation-duration: 1s; /* Animation duration */
-  animation-timing-function: ease-in-out; /* Animation timing function */
-  animation-iteration-count: 1; /* Animation iteration count (1 for one direction) */
-  animation-fill-mode: forwards; /* Keep the final state of the animation */
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .container {
-  animation-duration: 1s; /* Animation duration */
-  animation-timing-function: ease-in-out; /* Animation timing function */
-  animation-iteration-count: 1; /* Animation iteration count (1 for one direction) */
-  animation-fill-mode: forwards; /* Keep the final state of the animation */
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-/* Apply the animation to the text when the button is clicked */
 .advice__text.animate {
   animation-name: slideAndCenter;
   opacity: 1;
@@ -81,6 +90,14 @@ body {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 34.375em) {
+  .img__divider {
+    left: 0;
+    width: 100%;
+    margin-bottom: 0;
+    padding-top: none;
+  }
+}
 .btn {
   position: absolute;
   place-content: center;

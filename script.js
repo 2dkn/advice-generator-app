@@ -59,11 +59,12 @@ const fetchAdvice = () => {
   }, 1500);
 };
 
-// Add a click event listener to the button to fetch advice on click
+// Add a click event listener to the button to fetch advice/animation/container on click
 button.addEventListener("click", fetchAdvice);
 button.addEventListener("click", addAnimationClass);
 button.addEventListener("click", addContainerClass);
 
+// calls the functions
 fetchAdvice();
 addAnimationClass();
 addContainerClass();

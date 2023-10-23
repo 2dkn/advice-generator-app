@@ -25,12 +25,12 @@ Your users should be able to:
 ### Screenshot
 
 - Screen
-  ![Design preview for the Advice Generator App coding challenge](./design/advicegenapp.png)
+  ![Design preview for the Advice Generator App coding challenge](./design/agapp.png)
 
 ### Links
 
-- Solution URL: [Solution Site]()
-- Live Site URL: [Live Site]()
+- Solution URL: [Solution Site](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub)
+- Live Site URL: [Live Site](https://advice-generator-app-2dkn.netlify.app/)
 
 ### Built With
 
