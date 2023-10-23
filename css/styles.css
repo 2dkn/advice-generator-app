@@ -24,6 +24,10 @@ body {
   z-index: 1;
 }
 
+.container.animate {
+  animation-name: slideAndCenter;
+}
+
 .advice__header {
   font-weight: bold;
   font-size: 1rem;
@@ -31,6 +35,37 @@ body {
   color: hsl(150, 100%, 66%);
   font-family: "Manrope", san-serif;
   margin-bottom: 0;
+}
+
+@keyframes slideAndCenter {
+  0% {
+    transform: translateX(-45%); /* Start from the left (fully hidden) */
+  }
+  50% {
+    transform: translateX(45%); /* Move to the center */
+  }
+  100% {
+    transform: translateX(0%); /* Return to the left (fully hidden) */
+  }
+}
+.advice__text {
+  animation-duration: 1s; /* Animation duration */
+  animation-timing-function: ease-in-out; /* Animation timing function */
+  animation-iteration-count: 1; /* Animation iteration count (1 for one direction) */
+  animation-fill-mode: forwards; /* Keep the final state of the animation */
+}
+
+.container {
+  animation-duration: 1s; /* Animation duration */
+  animation-timing-function: ease-in-out; /* Animation timing function */
+  animation-iteration-count: 1; /* Animation iteration count (1 for one direction) */
+  animation-fill-mode: forwards; /* Keep the final state of the animation */
+}
+
+/* Apply the animation to the text when the button is clicked */
+.advice__text.animate {
+  animation-name: slideAndCenter;
+  opacity: 1;
 }
 
 .advice__text {
