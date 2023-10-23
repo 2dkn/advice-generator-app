@@ -11,6 +11,7 @@ let isButtonClickable = true;
 
 const getRandomNumber = () => {
   return Math.floor(Math.random() * 224) + 1;
+  // return 71;
 };
 
 const addAnimationClass = () => {
@@ -32,7 +33,7 @@ const fetchAdvice = () => {
   if (!isButtonClickable) {
     return;
   }
-  // Disable the button
+  // Disables the button
   isButtonClickable = false;
   button.disabled = true;
 

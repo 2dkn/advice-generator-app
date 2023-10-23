@@ -24,12 +24,8 @@ body {
   min-height: 12rem;
   border-radius: 1rem;
   padding: 2rem;
-  // overflow: hidden;
   z-index: 1;
-}
-
-.container.animate {
-  animation-name: slideAndCenter;
+  // overflow: hidden;
 }
 
 .advice__header {
@@ -41,12 +37,16 @@ body {
   margin-bottom: 0;
 }
 
+.container.animate {
+  animation-name: slideAndCenter;
+}
+
 @keyframes slideAndCenter {
   0% {
-    transform: translateX(-45%); /* Start from the left (fully hidden) */
+    transform: translateX(-25%); /* Start from the left (fully hidden) */
   }
   50% {
-    transform: translateX(45%); /* Move to the center */
+    transform: translateX(25%); /* Move to the center */
   }
   100% {
     transform: translateX(0%); /* Return to the left (fully hidden) */
@@ -102,7 +102,7 @@ body {
 }
 
 .btn__image {
-  background-color: $neongreen;
+  background-image: $neongreen;
 }
 
 .next__btn {
@@ -114,6 +114,7 @@ body {
   outline: none;
   background-color: $neongreen;
   transition: transform 0.15s;
+  z-index: 3434;
 }
 
 .next__btn:active {
