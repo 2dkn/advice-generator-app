@@ -59,17 +59,28 @@ body {
   cursor: pointer;
 }
 
+.btn:hover {
+  border-radius: 50%;
+  box-shadow: -0.5px -0.5px 20px 10px hsla(150, 100%, 66%, 0.33);
+}
+
 .btn__image {
   background-color: $neongreen;
 }
 
-.next-btn {
+.next__btn {
   width: 4rem;
   height: 4rem;
   cursor: pointer;
   border: 1rem none $neongreen;
   border-radius: 50%;
+  outline: none;
   background-color: $neongreen;
+  transition: transform 0.15s;
+}
+
+.next__btn:active {
+  transform: scale(0.9);
 }
 
 .footer {
